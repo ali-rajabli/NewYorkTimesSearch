@@ -1,8 +1,11 @@
 //clear All(articles,options..)
-function clearAll() {
+function clearResult() {
     $('#articles-list').empty();
     $('.is-invalid').removeClass('is-invalid');
     $('.error-message').remove();
+}
+
+function clearValues() {
     $('#search-term').val("");
     $('#start-year').val("");
     $('#end-year').val("");
@@ -94,7 +97,7 @@ function xeberiGoster(xeber) {
 
 $('#run-search').on('click', function() {
     var netice = checkFormValidity();
-    clearAll();
+    clearResult();
     if (netice !== false) {
 
         for (let xeta of netice) {
@@ -112,6 +115,10 @@ $('#run-search').on('click', function() {
     }
 });
 
-$('#clear-all').on('click', function() {
-    clearAll();
+$('#clear-result').on('click', function() {
+    clearResult();
+});
+
+$('#clear-values').on('click', function() {
+    clearValues();
 });
