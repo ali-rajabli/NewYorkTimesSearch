@@ -2,3 +2,21 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.8em;
+}
+
+.news-item {
+    margin: 10px 0;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.news-item a:hover {
+    color: #6456dd;
+}
